@@ -4,7 +4,7 @@ class Sinc extends Thread{
         this.letras = letras;
     }
     public void run(){
-        Synchronized(letras){
+        synchronized(letras){
             for(int i = 1; i <=100; i++){
                 System.out.printf("%d ", i);
                 System.out.printf(letras);
