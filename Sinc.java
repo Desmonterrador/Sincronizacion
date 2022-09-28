@@ -1,6 +1,6 @@
 class Sinc extends Thread{
-    Stringbuffer letras;
-    public Sinc(Stringbuffer letras){
+    StringBuffer letras;
+    public Sinc(StringBuffer letras){
         this.letras = letras;
     }
     public void run(){
@@ -15,7 +15,7 @@ class Sinc extends Thread{
         }
     }
     public static void main(String [] args){
-        Stringbuffer sb  = new Stringbuffer("A");
+        StringBuffer sb  = new StringBuffer("A");
         new Sinc(sb).start();
         new Sinc(sb).start();
         new Sinc(sb).start();
